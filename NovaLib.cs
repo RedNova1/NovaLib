@@ -27,15 +27,22 @@ namespace NovaLib
             foreach (var plugin in Chainloader.PluginInfos)
             {
                 var metadata = plugin.Value.Metadata;
-                if (metadata.GUID.Equals("com.sinai.unityexplorer"))
+                if (metadata.GUID.Equals("com.sinai.unityexplorer") && passThrough != null)
                 {
                     Console.WriteLine($"Found {"com.sinai.unityexplorer"}, quitting");
                     playerUtil.QuitMap();
                     break;
                 }
             }
+            if (passThrough != null)
+            {
+                passThrough.SetActive(false);
+            }
+        }
 
-            passThrough.SetActive(false);
+        void Update()
+        {
+            Time.timeScale = 1.0f;
         }
     }
 
