@@ -6,45 +6,75 @@ using UnityEngine;
 
 namespace NovaLib
 {
-    [BepInPlugin("RedNova.ULTRAKILL.NovaLib", "NovaLib", "1.0.0.0")]
-    [BepInDependency("com.sinai.unityexplorer", BepInDependency.DependencyFlags.SoftDependency)]
-    public class NovaLib : BaseUnityPlugin
-    {
-        private void Awake()
-        {
-            // Plugin startup logic
-            Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
-        }
-
-    }
-    
  public class Anticheat : MonoBehaviour
     {
-        [SerializeField] PlayerUtilities playerUtil; 
-        [SerializeField] GameObject passThrough; // Canvas UI Blocker
-        void Start()
+        [SerializeField] PlayerUtilities playerUtil;
+        [SerializeField] OnCheatsEnable cheats;
+        
+        [Tooltip("Plug Canvas Blocker Into here")] [SerializeField] GameObject missingDepUI; // if you wish to stop the game if you don't have the mod, put your Canvas Blocker in here.
+        void prereq() // Disable the blocker UI if present
         {
+            if (missingDepUI != null) { missingDepUI.gameObject.SetActive(false); playerUtil.EnablePlayer(); }
+        }
+        
+        
+        [Header("Module Toggles")]
+        public bool TimeScaleLocked; //toggle for locking time scale
+        [SerializeField] bool blockUnityExplorer;
+        public void unityExplorerCheck() {
             foreach (var plugin in Chainloader.PluginInfos)
             {
                 var metadata = plugin.Value.Metadata;
-                if (metadata.GUID.Equals("com.sinai.unityexplorer") && passThrough != null)
+                if (metadata.GUID.Equals("com.sinai.unityexplorer"))
                 {
                     Console.WriteLine($"Found {"com.sinai.unityexplorer"}, quitting");
-                    playerUtil.QuitMap();
+                    AnticheatActivate();
                     break;
                 }
             }
-            if (passThrough != null)
-            {
-                passThrough.SetActive(false);
-            }
         }
+        [SerializeField] bool blockCheats; public void cheatBlocker() { if (blockCheats == true) { cheats.enabled = true; } }
+
+
+        [Header("Anticheat Actions")]
+        [SerializeField] bool exitMap; public void kickPlayer() { if (exitMap == true) { playerUtil.QuitMap(); } }
+        [SerializeField] bool disablePlayer; public void freezePlayer() { if (disablePlayer == true) { playerUtil.DisablePlayer(); } } //freezes game 
+
+        [Header("TimeScale Lock")]
+        [Min(0.1f)] public float timeScaleSet = 1; //what the timescale is locked to
+        void timeScaleLock () { if (TimeScaleLocked == true) { Time.timeScale = timeScaleSet; } }
+        public void changeTimeScale(float timeScale)
+        {
+            timeScaleSet = timeScale;
+            timeScaleLock();
+        }
+
+
+
+        void Start()
+        {
+            prereq();
+            unityExplorerCheck();
+            cheatBlocker();
+        }
+        
+
+ 
 
         void Update()
         {
-            Time.timeScale = 1.0f;
+            timeScaleLock();
         }
+
+        public void AnticheatActivate()
+        {
+            kickPlayer();
+            freezePlayer();
+        }
+
     }
+
+
 
    
 }
