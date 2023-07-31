@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5475934684737161689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1968255295575352892}
+  - component: {fileID: 6964458854824871585}
+  - component: {fileID: 4632477828393987385}
+  - component: {fileID: 3056613118305227405}
+  m_Layer: 0
+  m_Name: AnticheatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1968255295575352892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5475934684737161689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 600.3634, y: 310.2779, z: -48.743187}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6964458854824871585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5475934684737161689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1061373527, guid: a6512ed3c68d5dd4c84879a1e03da28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerUtil: {fileID: 3056613118305227405}
+  cheats: {fileID: 4632477828393987385}
+  missingDepUI: {fileID: 0}
+  TimeScaleLocked: 0
+  blockUnityExplorer: 0
+  blockCheats: 0
+  exitMap: 0
+  disablePlayer: 0
+  timeScaleSet: 1
+--- !u!114 &4632477828393987385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5475934684737161689}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5676206098660d495b88c280a17b6385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  includeMajorAssists: 1
+  onCheatsEnable:
+    toActivateObjects:
+    - {fileID: 0}
+    toDisActivateObjects: []
+    onActivate:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6964458854824871585}
+          m_MethodName: AnticheatActivate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    onDisActivate:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &3056613118305227405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5475934684737161689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027a29917d41368bb51e9276130db267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableOutput: 0
+  distanceTraveledMapVar: 
+  currentHealthVar: 
+  currentHardDamageVar: 
+  currentStyleScoreVar: 
+  currentTimeVar: 
+  currentKillCountVar: 
+  currentRankVar: 
