@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5WX+dc4B0riu+HcppALLJmxltGnxBXgYcOUvMOTMIDsm+TuTcv1T3+POpL0XjjxFvhpJ4Ofa6MC/n/nO7j3V7w==",
+  "dgSpecHash": "oAhsXV4NF+H596G/lMchIQRnDIsaenbmcffLvlObetUFeILMxlLbIVr4s/bSjgeZHKoASRHnMa1Lzzm8qOv5GQ==",
   "success": true,
-  "projectFilePath": "F:\\RedNova\\CustomScripts\\NovaLib\\NovaLib\\NovaLib.csproj",
+  "projectFilePath": "F:\\RedNova\\RudeLevelEditor2\\Assets\\Novalib\\.NovaLib\\NovaLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RedNova\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\RedNova\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",

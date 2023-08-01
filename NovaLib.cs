@@ -10,16 +10,18 @@ namespace NovaLib
     {
         [SerializeField] PlayerUtilities playerUtil;
         [SerializeField] OnCheatsEnable cheats;
+        [SerializeField] OptionsManager pauseMenu;
         
         [Tooltip("Plug Canvas Blocker Into here")] [SerializeField] GameObject missingDepUI; // if you wish to stop the game if you don't have the mod, put your Canvas Blocker in here.
         void prereq() // Disable the blocker UI if present
         {
             if (missingDepUI != null) { missingDepUI.gameObject.SetActive(false); playerUtil.EnablePlayer(); }
+            pauseMenu = GetComponent<OptionsManager>();
         }
         
         
         [Header("Module Toggles")]
-        public bool TimeScaleLocked; //toggle for locking time scale
+        [Tooltip("May cause unforseen consequences")]public bool TimeScaleLocked; //toggle for locking time scale
         [SerializeField] bool blockUnityExplorer;
         public void unityExplorerCheck() {
             foreach (var plugin in Chainloader.PluginInfos)
@@ -42,7 +44,7 @@ namespace NovaLib
 
         [Header("TimeScale Lock")]
         [Min(0.1f)] public float timeScaleSet = 1; //what the timescale is locked to
-        void timeScaleLock () { if (TimeScaleLocked == true) { Time.timeScale = timeScaleSet; } }
+        void timeScaleLock () { if (TimeScaleLocked == true && pauseMenu.paused == false) { Time.timeScale = timeScaleSet; } }
         public void changeTimeScale(float timeScale)
         {
             timeScaleSet = timeScale;

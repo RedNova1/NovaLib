@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\RedNova\\CustomScripts\\NovaLib\\NovaLib\\NovaLib.csproj": {}
+    "F:\\RedNova\\RudeLevelEditor2\\Assets\\Novalib\\.NovaLib\\NovaLib.csproj": {}
   },
   "projects": {
-    "F:\\RedNova\\CustomScripts\\NovaLib\\NovaLib\\NovaLib.csproj": {
+    "F:\\RedNova\\RudeLevelEditor2\\Assets\\Novalib\\.NovaLib\\NovaLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\RedNova\\CustomScripts\\NovaLib\\NovaLib\\NovaLib.csproj",
+        "projectUniqueName": "F:\\RedNova\\RudeLevelEditor2\\Assets\\Novalib\\.NovaLib\\NovaLib.csproj",
         "projectName": "NovaLib",
-        "projectPath": "F:\\RedNova\\CustomScripts\\NovaLib\\NovaLib\\NovaLib.csproj",
+        "projectPath": "F:\\RedNova\\RudeLevelEditor2\\Assets\\Novalib\\.NovaLib\\NovaLib.csproj",
         "packagesPath": "C:\\Users\\RedNova\\.nuget\\packages\\",
-        "outputPath": "F:\\RedNova\\CustomScripts\\NovaLib\\NovaLib\\obj\\",
+        "outputPath": "F:\\RedNova\\RudeLevelEditor2\\Assets\\Novalib\\.NovaLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "F:\\RedNova\\CustomScripts\\NovaLib\\NovaLib\\NuGet.Config",
+          "F:\\RedNova\\RudeLevelEditor2\\Assets\\Novalib\\.NovaLib\\NuGet.Config",
           "C:\\Users\\RedNova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
