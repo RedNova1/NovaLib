@@ -14,7 +14,7 @@
           "BepInEx.PluginInfoProps": "1.1.0",
           "NETStandard.Library": "2.0.3",
           "UnityEngine.Modules": "2019.4.40",
-          "Assembly-CSharp": "0.0.0.0"
+          ".Assembly-CSharp": "0.0.0.0"
         },
         "runtime": {
           "NovaLib.dll": {}
@@ -386,9 +386,9 @@
         }
       },
       "UnityEngine.Modules/2019.4.40": {},
-      "Assembly-CSharp/0.0.0.0": {
+      ".Assembly-CSharp/0.0.0.0": {
         "runtime": {
-          "Assembly-CSharp.dll": {
+          ".Assembly-CSharp.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -675,7 +675,7 @@
       "path": "unityengine.modules/2019.4.40",
       "hashPath": "unityengine.modules.2019.4.40.nupkg.sha512"
     },
-    "Assembly-CSharp/0.0.0.0": {
+    ".Assembly-CSharp/0.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

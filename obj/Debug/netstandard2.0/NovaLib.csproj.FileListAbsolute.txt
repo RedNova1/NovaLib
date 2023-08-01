@@ -1,0 +1,13 @@
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\bin\Debug\netstandard2.0\NovaLib.deps.json
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\bin\Debug\netstandard2.0\NovaLib.dll
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\bin\Debug\netstandard2.0\NovaLib.pdb
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\bin\Debug\netstandard2.0\.Assembly-CSharp.dll
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.csproj.AssemblyReference.cache
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\PluginInfo.cs
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.GeneratedMSBuildEditorConfig.editorconfig
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.AssemblyInfoInputs.cache
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.AssemblyInfo.cs
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.csproj.CoreCompileInputs.cache
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.csproj.CopyComplete
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.dll
+F:\RedNova\RudeLevelEditor2\Assets\Novalib\.NovaLib\obj\Debug\netstandard2.0\NovaLib.pdb
